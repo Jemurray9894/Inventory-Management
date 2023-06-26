@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="murray.software1project.AddPart">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="512.0" layoutX="-1.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="639.0" />
+      <TextField fx:id="addPartID" disable="true" layoutX="169.0" layoutY="120.0" promptText="Auto-Generated" />
+      <Label layoutX="45.0" layoutY="41.0" prefHeight="25.0" prefWidth="64.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inhousePartradio" layoutX="152.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleinhousePartradio" prefHeight="25.0" prefWidth="91.0" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="ADDPartToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="outsourcePartradio" layoutX="280.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleoutsourcePartradio" prefHeight="25.0" prefWidth="91.0" text="Outsourced" toggleGroup="$ADDPartToggle" />
+      <TextField fx:id="textnameAddPart" layoutX="169.0" layoutY="154.0" />
+      <TextField fx:id="textinventoryAddPart" layoutX="169.0" layoutY="189.0" />
+      <TextField fx:id="textpriceAddPart" layoutX="169.0" layoutY="227.0" />
+      <TextField fx:id="textmaxAddPart" layoutX="169.0" layoutY="267.0" />
+      <TextField fx:id="radioTextAdd" layoutX="169.0" layoutY="304.0" />
+      <TextField fx:id="textminAddPart" layoutX="390.0" layoutY="267.0" />
+      <Label layoutX="63.0" layoutY="124.0" text="ID" />
+      <Label layoutX="63.0" layoutY="158.0" text="Name" />
+      <Label layoutX="63.0" layoutY="193.0" text="Inv" />
+      <Label layoutX="63.0" layoutY="231.0" text="Price/Cost" />
+      <Label layoutX="63.0" layoutY="271.0" text="Max" />
+      <Label fx:id="radioLabelPart" layoutX="63.0" layoutY="308.0" text="Machine ID" />
+      <Label layoutX="355.0" layoutY="271.0" text="Min" />
+      <Button fx:id="savePartBT" layoutX="345.0" layoutY="386.0" mnemonicParsing="false" onAction="#handlesavePartBT" text="Save" />
+      <Button fx:id="partCancelBT" layoutX="412.0" layoutY="386.0" mnemonicParsing="false" onAction="#handlepartCancel" text="Cancel" />
+   </children>
+</AnchorPane>
